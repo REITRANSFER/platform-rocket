@@ -12,6 +12,14 @@ import VideoBackgrounds from "./pages/VideoBackgrounds";
 import Training from "./pages/Training";
 import Lesson from "./pages/Lesson";
 import Premium from "./pages/Premium";
+import FAQ from "./pages/FAQ";
+import Schedule from "./pages/Schedule";
+import Chat from "./pages/Chat";
+import Glossary from "./pages/Glossary";
+import Team from "./pages/Team";
+import Onboarding from "./pages/Onboarding";
+import Tickets from "./pages/Tickets";
+import Changelog from "./pages/Changelog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -71,6 +79,70 @@ const App = () => (
               element={
                 <ProtectedRoute>
                   <Premium />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/faq"
+              element={
+                <ProtectedRoute>
+                  <FAQ />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/schedule"
+              element={
+                <ProtectedRoute>
+                  <Schedule />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/chat"
+              element={
+                <ProtectedRoute>
+                  <Chat />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/glossary"
+              element={
+                <ProtectedRoute>
+                  <Glossary />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/team"
+              element={
+                <ProtectedRoute>
+                  <Team />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/onboarding"
+              element={
+                <ProtectedRoute>
+                  <Onboarding />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/tickets"
+              element={
+                <ProtectedRoute>
+                  <Tickets />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/changelog"
+              element={
+                <ProtectedRoute>
+                  <Changelog />
                 </ProtectedRoute>
               }
             />
