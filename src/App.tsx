@@ -20,6 +20,8 @@ import Team from "./pages/Team";
 import Onboarding from "./pages/Onboarding";
 import Tickets from "./pages/Tickets";
 import Changelog from "./pages/Changelog";
+import Library from "./pages/Library";
+import LibraryResource from "./pages/LibraryResource";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -143,6 +145,22 @@ const App = () => (
               element={
                 <ProtectedRoute>
                   <Changelog />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/library"
+              element={
+                <ProtectedRoute>
+                  <Library />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/library/:slug"
+              element={
+                <ProtectedRoute>
+                  <LibraryResource />
                 </ProtectedRoute>
               }
             />

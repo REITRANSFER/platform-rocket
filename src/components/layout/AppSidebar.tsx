@@ -12,6 +12,7 @@ import {
   Ticket,
   Megaphone,
   Users,
+  Library as LibraryIcon,
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -34,6 +35,7 @@ const mainNavItems = [
   { title: "Home", url: "/dashboard", icon: Home },
   { title: "Onboarding", url: "/onboarding", icon: ListChecks },
   { title: "Training", url: "/training", icon: GraduationCap },
+  { title: "Library", url: "/library", icon: LibraryIcon },
   { title: "Templates", url: "/templates", icon: LayoutGrid },
 ];
 
