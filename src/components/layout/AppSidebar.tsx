@@ -100,8 +100,7 @@ export function AppSidebar() {
             <AvatarFallback
               className="text-white text-sm font-medium"
               style={{
-                background:
-                  "linear-gradient(90deg, rgb(237, 28, 36), rgb(244, 96, 79) 45%, rgb(247, 147, 64))",
+                background: "#ed1c24",
                 boxShadow:
                   "rgba(255, 255, 255, 0.4) 0px -4px 8px inset, rgba(255, 255, 255, 0.8) 0px 0px 4px inset",
               }}

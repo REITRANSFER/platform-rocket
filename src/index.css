@@ -42,11 +42,12 @@
     /* Platform background */
     --platform-background: 211 40% 6%;
 
-    /* Brand gradient (red → coral → warm orange).
+    /* Brand gradient — pure REI Transfer red family.
+       Deep red → bright red highlight → brand red.
        Variable names kept for backwards compatibility with existing components. */
-    --gradient-purple: 358 84% 52%;
-    --gradient-pink: 12 89% 60%;
-    --gradient-orange: 25 95% 58%;
+    --gradient-purple: 358 75% 42%;
+    --gradient-pink: 358 100% 65%;
+    --gradient-orange: 358 84% 52%;
   }
 }
 
