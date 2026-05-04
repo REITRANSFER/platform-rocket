@@ -117,14 +117,14 @@ const Auth = () => {
 
   if (authLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#08020e' }}>
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#050d18' }}>
         <div className="h-8 w-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4" style={{ backgroundColor: '#08020e' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4" style={{ backgroundColor: '#050d18' }}>
       {/* Logo */}
       <a href="/" className="mb-12">
         <img src={logo} alt="Design Rocket" className="h-10" />
@@ -147,7 +147,7 @@ const Auth = () => {
                 placeholder="Full name"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                className="h-12 bg-[#0f0816] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
+                className="h-12 bg-[#0a1422] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
               />
               {errors.fullName && <p className="text-xs text-destructive mt-1">{errors.fullName}</p>}
             </div>
@@ -159,7 +159,7 @@ const Auth = () => {
               placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-12 bg-[#0f0816] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
+              className="h-12 bg-[#0a1422] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
             />
             {errors.email && <p className="text-xs text-destructive mt-1">{errors.email}</p>}
           </div>
@@ -170,7 +170,7 @@ const Auth = () => {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="h-12 bg-[#0f0816] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
+              className="h-12 bg-[#0a1422] border-border/30 focus:border-primary/50 placeholder:text-muted-foreground/50"
             />
             {errors.password && <p className="text-xs text-destructive mt-1">{errors.password}</p>}
           </div>
